@@ -1,0 +1,12 @@
+package spSlide;
+
+public class no11 {
+public static void main(String [] args) {
+	System.out.println("I have a message for you.");
+	showMessage();
+	System.out.println("that's all folks!");
+}
+public static void showMessage() {
+	System.out.println("hello world.");
+}
+}
