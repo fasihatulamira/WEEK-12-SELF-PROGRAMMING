@@ -1,0 +1,31 @@
+package selfprogMethod;
+
+public class MainApp1 {
+public static void main(String[] args) {
+	MainApp1 obj=new MainApp1();
+	
+	obj.displayMessage();
+	obj.printStatus(7,9);
+	System.out.println(obj.findArea(3, 4));
+	System.out.println(obj.divisible(4, 2));
+}
+	 
+void displayMessage() {
+	System.out.println("Hello!!");
+}
+  void printStatus(int a, int b) {
+	  if(a<b)
+		  System.out.println(a+" is minimum");
+	  else
+		  System.out.println(b+" is minimum");
+}
+  int findArea(int h, int j) {
+	  return 1*j;
+  }
+  boolean divisible(int x, int y) {
+	  if(x%y==0)
+		  return true;
+	  else
+		  return false;
+  }
+}
