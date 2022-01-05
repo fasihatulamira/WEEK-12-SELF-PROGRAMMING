@@ -1,0 +1,41 @@
+package spSlide2;
+
+public class no5 {
+	private static final int Largest = 0;
+
+	public static void main(String[] args)
+	{
+	     int[] listA = {11,22,36,42,15,46,27,48,19,10};
+	     int total, indLargest;
+	  
+	     // call sumArray method and return a value to total
+
+	    total = sumArray (listA);
+	    System.out.println("\n The sum of ListA is :" + total);
+
+	   // call indexLargestElement and return the index value to largest
+	   // element in the array
+	   indLargest = indexLargestElement (listA);
+	   System.out.println("\n The largest element is :" + listA[Largest]);
+
+	}
+	public static int sumArray(int[] list)
+	{
+	       int index;
+	       int sum = 0;
+	       for (index = 0; index < list.length; index++)
+		   sum = sum + list[index];
+	       return sum;
+	}
+
+	public static int indexLargestElement(int[] list)
+	{
+	         int index;
+	         int maxIndex = 0;
+	         for (index = 1; index < list.length; index++)
+	 	    if(list[maxIndex] < list[index])
+	                    maxIndex = index;
+	          return maxIndex;
+	} 	 
+
+}
