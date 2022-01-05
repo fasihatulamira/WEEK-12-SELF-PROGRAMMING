@@ -1,0 +1,22 @@
+package selfprogMethod;
+import java.util.Scanner;
+public class divisible {
+public static void main(String[] args) {
+	Scanner sc=new Scanner(System.in);
+	divisible obj=new divisible();
+	int num=0, num1=0;
+	
+	System.out.println("Enter two number: ");
+	num=sc.nextInt();
+	num1=sc.nextInt();
+	
+	System.out.println(obj.divisible(num,num1));
+}
+ boolean divisible(int x, int y) {
+ if (x%y==0)
+	 return true;
+ else
+	 return false;
+ 
+}
+}
