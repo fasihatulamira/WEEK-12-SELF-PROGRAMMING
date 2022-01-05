@@ -1,0 +1,23 @@
+package spSlide;
+import java.util.Scanner;
+public class no35 {
+public static void main(String [] args) {
+	int age=readAge();
+	if(age<=9) {
+		System.out.println("Children category");
+	}else if(age<=19) {
+		System.out.println("adolescent category");
+	}else {
+		System.out.println("adult category");
+	}
+}
+ public static int readAge() {
+	 Scanner sc=new Scanner(System.in);
+	 int age=0;
+	 do {
+		 System.out.println("please enter your age(1-100): ");
+		 age=sc.nextInt();
+	 }while((age<1)||(age>100));
+	 return age;
+ }
+}
