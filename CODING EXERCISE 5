@@ -1,0 +1,21 @@
+package selfprogMethod;
+import java.util.*;
+public class MainApp {
+public static void main(String[] args) {
+	Scanner sc=new Scanner(System.in);
+	MainApp obj= new MainApp();
+	int num1=0, num2=0;
+	
+	System.out.println("Enter two numbers: ");
+	num1=sc.nextInt();
+	num2=sc.nextInt();
+	
+	obj.findMax(num1,num2);// identify the max between two numbers
+}
+void findMax(int a, int b) {
+	if (a>b)
+		System.out.println(a + " is max");
+	else
+		System.out.println(b+" is max");
+}
+}
