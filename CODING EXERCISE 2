@@ -1,0 +1,20 @@
+package selfprogMethod;
+import java.util.Scanner;
+public class AreaCircle {
+public static void main(String[] args) {
+	Scanner sc=new Scanner(System.in);
+	AreaCircle obj= new AreaCircle();
+    int radius;
+	
+	System.out.println("Enter radius: ");
+	radius=sc.nextInt();
+	System.out.println("Area is: "+ obj.calAreaCircle(radius));
+}
+	
+	
+
+ double calAreaCircle(int r) {
+	double area=3.142*r*r;
+	return area;
+}
+}
