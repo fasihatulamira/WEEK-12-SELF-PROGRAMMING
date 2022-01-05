@@ -1,0 +1,24 @@
+package selfprogMethod;
+import java.util.*;
+public class average {
+	double sum=0;
+public static void main(String [] args) {
+	Scanner sc=new Scanner(System.in);
+	average obj=new average();
+	
+	double n,s=0,avg;
+	
+	int bil=sc.nextInt();
+	
+	for(int i=0; i<bil; i++) {
+		n=sc.nextDouble();
+		s=obj.findsum(n);
+	}
+	avg=s/bil;
+	System.out.println(avg);
+}
+double findsum(double num) {
+	sum=sum+num;
+	return sum;
+}
+}
