@@ -1,0 +1,18 @@
+package selfprogMethod;
+
+public class NoReturn {
+	public static void main(String [] args) {
+		int x=5;
+		int y=8;
+		
+		NoReturn obj= new NoReturn();
+		obj.calMul(x,y);
+	}
+	void calMul(int a, int b) {
+		int mul;
+		mul= a*b;
+		
+		System.out.println(mul);
+	}
+
+}
