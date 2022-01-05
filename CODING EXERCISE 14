@@ -1,0 +1,12 @@
+package spSlide2;
+
+public class no7 {
+	static int search (int[ ] num, int searchValue){
+		   int location = 0;
+		   for (int i=0; i <num.length; i++) 
+		      if(num[i] == searchValue)
+		         location = i;
+		   return location;
+		}
+
+}
