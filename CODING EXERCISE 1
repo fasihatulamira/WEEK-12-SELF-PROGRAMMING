@@ -1,0 +1,16 @@
+package selfprogMethod;
+import java.util.Scanner;
+public class Access {
+ 
+ 
+ void checkAge(int x) {
+	 if(x<18) 
+		 System.out.println("Access denied");
+		 else
+			 System.out.println("Access Granted");
+	 }
+ 
+ public static void main(String [] args) {
+	 Access obj=new Access();
+	 obj.checkAge(20);
+}}
