@@ -1,0 +1,20 @@
+package selfprogMethod;
+
+public class Return {
+	public static void main(String [] args) {
+		
+		int x=5;
+		int y=8;
+		int z=0;
+		Return obj=new Return();
+		
+		z=obj.calMul(x,y);
+		System.out.println(z);
+	}
+	int calMul(int a, int b) {
+		int mul;
+		mul=a*b;
+		return mul;
+	}
+
+}
